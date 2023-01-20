@@ -1,9 +1,12 @@
 const express = require("express");
 
-const app = express();
 const config = require("./config");
-const setupViewEngine = require("./config/setupViewEngine");
+const setupViewEngine = require("./config/viewEngine");
+
+const app = express();
 setupViewEngine(app);
+
+app.use(express.static("src/public"));
 
 app.get("/", (req, res) => {
   res.render("home", { layout: false });

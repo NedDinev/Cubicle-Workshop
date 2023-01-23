@@ -1,12 +1,11 @@
 {
   "cubes": [
     {
-      "name": {
-        "name": "cube1",
-        "description": "asdas",
-        "imageUrl": "asdsad",
-        "difficultyLevel": "1"
-      }
+      "id": 1,
+      "name": "asdas",
+      "description": "dsadas",
+      "imgUrl": "dasdas",
+      "difficultyLevel": "1"
     }
   ]
 }

@@ -1,0 +1,12 @@
+{
+  "cubes": [
+    {
+      "name": {
+        "name": "cube1",
+        "description": "asdas",
+        "imageUrl": "asdsad",
+        "difficultyLevel": "1"
+      }
+    }
+  ]
+}

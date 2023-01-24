@@ -1,39 +1,60 @@
 {
   "cubes": [
     {
-      "id": 1,
-      "name": "asdas",
-      "description": "dsadas",
-      "imgUrl": "dasdas",
-      "difficultyLevel": "1"
+      "name": "Rubik cube",
+      "description": "This one requires some skills",
+      "imgUrl": "https://images.pexels.com/photos/54101/magic-cube-cube-puzzle-play-54101.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "difficultyLevel": "4",
+      "id": 1
     },
     {
-      "name": "22222222",
-      "description": "2222222222",
-      "imgUrl": "222222222",
-      "difficultyLevel": "1",
+      "name": "Pro Cube",
+      "description": "One of the most hardcore cubes on the market",
+      "imgUrl": "https://images.pexels.com/photos/437345/pexels-photo-437345.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "difficultyLevel": "6",
       "id": 2
     },
     {
-      "id": 3,
-      "name": "33333333",
-      "description": "333333333333333333333",
-      "imgUrl": "3333333333333",
-      "difficultyLevel": "1"
+      "name": "Baby cube",
+      "description": "This one is just for fun",
+      "imgUrl": "https://images.pexels.com/photos/218444/pexels-photo-218444.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "difficultyLevel": "1",
+      "id": 3
     },
     {
-      "id": 4,
-      "name": "cube 111",
-      "description": "asdasd",
-      "imgUrl": "asdasdsad",
-      "difficultyLevel": "1"
+      "name": "Round Cube",
+      "description": "Only for proffesionals",
+      "imgUrl": "https://images.unsplash.com/photo-1590764096479-012fe025a6fc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDZ8fHxlbnwwfHx8fA%3D%3D&w=1000&q=80",
+      "difficultyLevel": "5",
+      "id": 4
     },
     {
-      "id": 5,
-      "name": "cube 123123",
-      "description": "aa",
-      "imgUrl": "aaa",
-      "difficultyLevel": "3"
+      "name": "Puzzle cube",
+      "description": "One of a kind puzzle cube",
+      "imgUrl": "https://www.pngkey.com/png/detail/114-1141530_gear-cube-rubiks-cube-gear-cube.png",
+      "difficultyLevel": "6",
+      "id": 5
+    },
+    {
+      "name": "Pyramid",
+      "description": "Easier than it looks",
+      "imgUrl": "https://i.pinimg.com/originals/a6/33/92/a6339264fb08efa6018a19c506eead2d.png",
+      "difficultyLevel": "3",
+      "id": 6
+    },
+    {
+      "name": "Beginner cube",
+      "description": "This is perfect for beginners",
+      "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Pocket_cube_twisted.jpg?20051124181811",
+      "difficultyLevel": "2",
+      "id": 7
+    },
+    {
+      "name": "Dodecahedron",
+      "description": "Easy 2x2 Dodecahedron",
+      "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/7/79/2x2_Dodecahedron_solved_cubemeister_com.jpg",
+      "difficultyLevel": "2",
+      "id": 8
     }
   ]
 }

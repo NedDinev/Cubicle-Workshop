@@ -8,21 +8,16 @@ exports.getCreateCube = (req, res) => {
 exports.postCreateCube = async (req, res) => {
   //save cube
   const { name, description, imageUrl, difficultyLevel } = req.body;
-  let cube = new Cube({name, description, imageUrl, difficultyLevel});
+  let cube = new Cube({ name, description, imageUrl, difficultyLevel });
   await cube.save();
   //redirect
   res.redirect("/");
 };
 
-exports.getDetailsPage = (req, res) => {
-  let cubeId = Number(req.params.cubeId);
-  if (!cubeId) {
-    return res.redirect("/404");
-  }
-  let cube = db.cubes.find((x) => x.id === cubeId);
-
+exports.getDetailsPage = async (req, res) => {
+  let cube = await Cube.findById(req.params.cubeId).lean();
   if (!cube) {
-    return res.redirect("/404");
+    res.redirect("/404");
   }
   res.render("details", { cube });
 };

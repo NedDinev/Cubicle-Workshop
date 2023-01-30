@@ -5,9 +5,9 @@ exports.getCreateCube = (req, res) => {
 };
 
 exports.postCreateCube = async (req, res) => {
-  //save cube
-  let cube = new Cube({ name, description, imageUrl, difficultyLevel });
-  await cube.save();
+  const { name, description, imageUrl, difficultyLevel } = req.body; //get form data
+  let cube = new Cube({ name, description, imageUrl, difficultyLevel }); //use data in cube schema
+  await cube.save(); //save new cube document to database
 
   //redirect
   res.redirect("/");

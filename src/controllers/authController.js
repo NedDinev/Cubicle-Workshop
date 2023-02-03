@@ -5,11 +5,21 @@ const authService = require("../services/authServices");
 router.get("/login", (req, res) => {
   res.render("auth/login");
 });
+router.post("/login", async (req, res) => {
+  const { username, password } = req.body;
+  try {
+    const user = await authService.login(username, password);
+  } catch (error) {
+    console.log(error);
+    res.redirect("/404");
+  }
+
+  res.redirect("/");
+});
 
 router.get("/register", (req, res) => {
   res.render("auth/register");
 });
-
 router.post("/register", async (req, res) => {
   const { username, password, repeatPassword } = req.body;
 

@@ -4,8 +4,15 @@ const bcrypt = require("bcrypt");
 const userSchema = new mongoose.Schema({
   username: {
     type: String,
-    minLength: [2, "username is too short"],
+    minLength: [5, "username is too short"],
     required: true,
+    unique: true,
+    validate: {
+      validator: function (value) {
+        return /^[a-zA-Z0-9]+$/.test(value);
+      },
+      message: "Username should consist only of latin characters",
+    },
   },
   password: {
     type: String,

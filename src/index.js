@@ -3,7 +3,10 @@ const cookieParser = require("cookie-parser");
 
 const routes = require("./routes");
 const config = require("./config");
+
+const errorHandler = require("./middleware/errorHandlerMiddleware");
 const authMiddleware = require("./middleware/authMiddleware");
+
 const setupViewEngine = require("./config/viewEngine");
 const initDatabase = require("./config/databaseInit");
 
@@ -15,6 +18,7 @@ app.use(cookieParser());
 app.use(express.urlencoded({ extended: false }));
 app.use(authMiddleware.authentication);
 app.use(routes);
+app.use(errorHandler); // use with next(new Error "error") in controller functions
 
 initDatabase() //if database doesn't exist, don't run server
   .then(() =>

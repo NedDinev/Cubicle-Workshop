@@ -21,13 +21,29 @@ The application will be accessible at http://localhost:3000
 
 
 
-The application consists of the following pages:
 
-Home: This page displays a list of all the available cubes in the system.
-Create: This page allows users to create a new cube.
-Details: This page displays detailed information about a specific cube.
-Edit: This page allows users to edit an existing cube.
-Delete: This page allows users to delete an existing cube.
-Login: This page allows users to log in to their account.
-Register: This page allows users to create a new account.
-Profile: This page displays information about the logged-in user, including their created cubes and purchased cubes.
+### The application consists of the following pages:
+<br/>
+
+**Home:** This page displays a list of all the available cubes in the system.
+<br/>
+
+**Create:** This page allows users to create a new cube.
+<br/>
+
+**Details:** This page displays detailed information about a specific cube.
+<br/>
+
+**Edit:** This page allows users to edit an existing cube.
+<br/>
+
+**Delete:** This page allows users to delete an existing cube.
+<br/>
+
+**Login:** This page allows users to log in to their account.
+<br/>
+
+**Register:** This page allows users to create a new account.
+<br/>
+
+**Profile:** This page displays information about the logged-in user, including their created cubes and purchased cubes.
